@@ -15,3 +15,5 @@ The difficulty with an ECS modular system is that ECS as a design pattern not ve
 
 # Useful Websites
 - [Data locality from game programming patterns](https://gameprogrammingpatterns.com/data-locality.html)
+- [GLFW OpenGL hello world basically](https://www.glfw.org/documentation.html)
+- [GLFW github repo](https://github.com/glfw/glfw)
