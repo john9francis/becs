@@ -12,6 +12,8 @@ The difficulty with an ECS modular system is that ECS as a design pattern not ve
 - [ ] Allow for a fast mode which doesn't render anything (for physics) and a game mode that renders
 - [ ] Add bindings for other languages
 
+# Progress:
+- 3/10/24 Got glfw linked up through github, but gl commands still not working. I need openGL somewhere in there. 
 
 # Useful Websites
 - [Data locality from game programming patterns](https://gameprogrammingpatterns.com/data-locality.html)
