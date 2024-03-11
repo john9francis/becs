@@ -1,7 +1,7 @@
-﻿// becs.cpp : Defines the entry point for the application.
+﻿// becs.cc : Defines the entry point for the application.
 //
 
-#include "becs.h"
+#include "becs.hh"
 
 using namespace std;
 

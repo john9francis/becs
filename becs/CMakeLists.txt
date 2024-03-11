@@ -12,7 +12,7 @@ endif()
 project ("becs")
 
 # Add source to this project's executable.
-add_executable (becs "becs.cpp" "becs.h")
+add_executable (becs "becs.cc" "becs.hh")
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET becs PROPERTY CXX_STANDARD 20)
