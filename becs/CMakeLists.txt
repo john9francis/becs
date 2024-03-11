@@ -11,8 +11,17 @@ endif()
 
 project ("becs")
 
+
+# add headers for development
+include_directories(${PROJECT_SOURCE_DIR}/include)
+
+
+# Add sources and headers to executable
+file(GLOB sources ${PROJECT_SOURCE_DIR}/src/*.cc)
+file(GLOB headers ${PROJECT_SOURCE_DIR}/include/*.hh)
+
 # Add source to this project's executable.
-add_executable (becs "becs.cc" "becs.hh")
+add_executable (becs "becs.cc" "becs.hh" ${sources} ${headers})
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET becs PROPERTY CXX_STANDARD 20)

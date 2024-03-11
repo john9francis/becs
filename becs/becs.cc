@@ -3,13 +3,13 @@
 
 #include "becs.hh"
 
+#include "test.hh"
+
 using namespace std;
+using namespace becs;
 
 int main()
 {
-	cout << "Hello CMake." << endl;
-	string input;
-	cout << "Enter input and press enter:";
-	cin >> input;
+	Test::Hello();
 	return 0;
 }
