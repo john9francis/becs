@@ -27,4 +27,24 @@ if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET becs PROPERTY CXX_STANDARD 20)
 endif()
 
-# TODO: Add tests and install targets if needed.
+
+# ////////////////////////////
+# GLFW3 FOR OPENGL
+# ////////////////////////////
+
+include(FetchContent)
+
+FetchContent_Declare(
+  glfw
+  GIT_REPOSITORY https://github.com/glfw/glfw.git
+  GIT_TAG        3.4
+)
+
+FetchContent_GetProperties(glfw)
+if(NOT glfw_POPULATED)
+  FetchContent_Populate(glfw)
+
+  add_subdirectory(${glfw_SOURCE_DIR} ${glfw_BINARY_DIR})
+endif()
+
+target_link_libraries(becs PRIVATE glfw)
